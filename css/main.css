@@ -16,7 +16,12 @@ html {
   box-sizing: inherit;
 }
 
-.logo {
+.page-wrapper {
+  max-width: 24rem;
+  margin: auto;
+}
+
+.c-logo {
   font-family: Shrikhand, cursive;
 }
 

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["scss/utils/_variables.scss","scss/base/_tags.scss","scss/components/_logo.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAUA;AAAA;AAAA;ACVA;EACE;EAEA,aDYS;ECXT;;;AAGF;AAAA;AAAA;EAGE;;;ACVF;EACE,aFaU","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["scss/utils/_variables.scss","scss/base/_tags.scss","scss/layout/_global.scss","scss/components/_logo.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAUA;AAAA;AAAA;ACVA;EACE;EAEA,aDYS;ECXT;;;AAGF;AAAA;AAAA;EAGE;;;ACVF;EACI;EACA;;;ACFJ;EACE,aHaU","file":"main.css"}
