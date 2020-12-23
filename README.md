@@ -8,6 +8,6 @@ Le rendu de ce code en est accessible sur cette [GitHub Page dédiée](https://l
 
 ## Sass
 
-- [Installer Sass](https://sass-lang.com/install).
+- [Installer Sass](https://sass-lang.com/install) sur votre machine.
 
 - Compiler le code SCSS en CSS avec la commande : `sass css/scss/main.scss css/main.css` 

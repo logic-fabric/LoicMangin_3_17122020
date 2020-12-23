@@ -1,11 +1,23 @@
+/* ======
+   COLORS
+   ====== */
+/* =====
+   FONTS
+   ===== */
 html {
   box-sizing: border-box;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.logo {
+  font-family: Shrikhand, cursive;
 }
 
 /*# sourceMappingURL=main.css.map */
