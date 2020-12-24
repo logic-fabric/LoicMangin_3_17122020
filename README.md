@@ -10,4 +10,6 @@ Le rendu de ce code en est accessible sur cette [GitHub Page dédiée](https://l
 
 - [Installer Sass](https://sass-lang.com/install) sur votre machine.
 
-- Compiler le code SCSS en CSS avec la commande : `sass css/scss/main.scss css/main.css` 
+- Compiler le code SCSS en CSS avec la commande : `sass css/scss/main.scss css/main.css`
+
+- Pour réaliser cette compilation "à la volée": `sass --watch css/scss/main.scss css/main.css`
