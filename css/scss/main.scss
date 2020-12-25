@@ -1,7 +1,13 @@
 @import "utils/variables";
+@import "utils/colors";
+@import "utils/display";
+@import "utils/sizings";
+@import "utils/spacings";
+@import "utils/typography";
 
 @import "base/tags";
 
 @import "layout/global";
 
 @import "components/buttons";
+@import "components/logo";

@@ -1,0 +1,28 @@
+$colors: (
+  "white": white,
+  "neutral-100": $neutral-100,
+  "neutral-300": $neutral-300,
+  "neutral-500": $neutral-500,
+  "neutral-700": $neutral-700,
+  "neutral-900": $neutral-900
+);
+
+/* ==========
+   BACKGROUND
+   ========== */
+
+@each $color, $hex in $colors {
+  .bg-#{$color} {
+    background-color: #{$hex};
+  }
+}
+
+/* ====
+   TEXT
+   ==== */
+
+@each $color, $hex in $colors {
+  .txt-#{$color} {
+    color: #{$hex};
+  }
+}

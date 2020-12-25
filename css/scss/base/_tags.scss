@@ -1,8 +1,12 @@
 html {
   box-sizing: border-box;
 
+  color: $neutral-900;
   font-family: $txt-font;
+  font-size: 1rem;
   font-weight: 300;
+
+  background: $neutral-700; // to-remove
 }
 
 *,
