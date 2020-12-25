@@ -1,4 +1,15 @@
-.c-btn {}
+.c-btn {
+  padding: $grid-2 $grid-4;
+  border: 0;
+  border-radius: $grid-4;
+  
+  font-size: $h5-size;
+  font-weight: 500;
+}
 
 // Call-to-action buttons:
-.c-btn--cta {}
+.c-btn--cta {
+  color: white;
+
+  background: $brand-gradient;
+}
