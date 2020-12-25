@@ -15,6 +15,10 @@
 }
 
 .bg-neutral-100 {
+  background-color: #f7f7f7;
+}
+
+.bg-neutral-200 {
   background-color: #eaeaea;
 }
 
@@ -42,6 +46,10 @@
 }
 
 .txt-neutral-100 {
+  color: #f7f7f7;
+}
+
+.txt-neutral-200 {
   color: #eaeaea;
 }
 
@@ -849,6 +857,10 @@ h6 {
   background: white;
 }
 
+.l-location {
+  box-shadow: inset 0 0.125rem 0.125rem #b9b9b9;
+}
+
 .c-btn {
   padding: 1rem 2rem;
   border: 0;
@@ -873,7 +885,7 @@ h6 {
   margin: 1rem 0 1rem 1rem;
   padding: 1.5rem 2rem 1.5rem 1.5rem;
   border-radius: 1.5rem;
-  box-shadow: 0.125rem 0.125rem 0.25rem #b9b9b9;
+  box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   background: #f7f7f7;
 }
 .c-step-list__number {
