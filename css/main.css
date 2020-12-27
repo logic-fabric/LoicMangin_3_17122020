@@ -917,11 +917,11 @@ footer li .iconed-link {
   padding: 1rem 2rem;
   border: 0;
   border-radius: 2rem;
+  box-shadow: 0.125rem 0.25rem 0.5rem #b9b9b9;
   font-size: 1.21rem;
   font-weight: 500;
   cursor: pointer;
 }
-
 .c-btn--cta {
   color: white;
   background: linear-gradient(-10deg, #9356dc, #ff79da);

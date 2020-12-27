@@ -2,16 +2,17 @@
   padding: $grid-2 $grid-4;
   border: 0;
   border-radius: $grid-4;
-  
+  @include btn-box-shadow;
+
   font-size: $h5-size;
   font-weight: 500;
 
   cursor: pointer;
-}
 
-// Call-to-action buttons:
-.c-btn--cta {
-  color: white;
+  // call-to-action buttons:
+  &--cta {
+    color: white;
 
-  background: $brand-gradient;
+    background: $brand-gradient;
+  }
 }

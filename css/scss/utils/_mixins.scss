@@ -1,3 +1,7 @@
 @mixin light-box-shadow {
   box-shadow: $grid-xs $grid-1 $grid-1 $neutral-200;
 }
+
+@mixin btn-box-shadow {
+  box-shadow: $grid-xs $grid-sm $grid-1 $neutral-300;
+}
