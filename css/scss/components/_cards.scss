@@ -1,4 +1,4 @@
-.card {
+.c-card {
   border-radius: $grid-2;
   @include light-box-shadow;
   overflow: hidden;
@@ -19,7 +19,7 @@
       object-fit: cover;
     }
 
-    .card__badge {
+    .c-card__badge {
       position: absolute;
       top: 0;
       right: $grid-2;
@@ -39,7 +39,7 @@
     height: 5 * $grid-2;
     padding: $grid-1 $grid-2;
 
-    .card__like {
+    .c-card__like {
       position: absolute;
       top: $grid-3;
       right: $grid-3;
