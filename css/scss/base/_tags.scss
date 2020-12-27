@@ -21,8 +21,7 @@ a {
 }
 
 a:hover {
-  color: $primary-500;
-  text-decoration: overline;
+  color: $neutral-200;
 }
 
 h1,
@@ -57,4 +56,15 @@ h5 {
 
 h6 {
   font-size: $h6-size;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  li {
+    margin: $grid-2 0;
+  }
 }

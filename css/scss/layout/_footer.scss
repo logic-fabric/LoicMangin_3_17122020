@@ -1,0 +1,27 @@
+footer {
+  padding: $grid-3 $grid-3 $grid-4 $grid-3;
+
+  color: white;
+
+  background: $neutral-800;
+
+  h2 {
+    padding-bottom: $grid-2;
+
+    font-family: $logo-font;
+    font-size: $h3-size;
+  }
+
+  li {
+    position: relative;
+    a {
+      color: white;
+      font-weight: 400;
+    }
+
+    .iconed-link {
+      position: absolute;
+      left: $grid-4;
+    }
+  }
+}

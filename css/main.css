@@ -827,8 +827,7 @@ a {
 }
 
 a:hover {
-  color: #9356dc;
-  text-decoration: overline;
+  color: #eaeaea;
 }
 
 h1,
@@ -865,14 +864,45 @@ h6 {
   font-size: 1.1rem;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  margin: 1rem 0;
+}
+
 .page-wrapper {
   max-width: 24rem;
   margin: auto;
   background: white;
 }
 
-.l-location {
+header .l-location {
   box-shadow: inset 0 0.125rem 0.125rem #b9b9b9;
+}
+
+footer {
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  color: white;
+  background: #444;
+}
+footer h2 {
+  padding-bottom: 1rem;
+  font-family: Shrikhand, cursive;
+  font-size: 1.4641rem;
+}
+footer li {
+  position: relative;
+}
+footer li a {
+  color: white;
+  font-weight: 400;
+}
+footer li .iconed-link {
+  position: absolute;
+  left: 2rem;
 }
 
 .c-btn {
