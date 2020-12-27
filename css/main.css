@@ -34,6 +34,10 @@
   background-color: #555555;
 }
 
+.bg-neutral-800 {
+  background-color: #444;
+}
+
 .bg-neutral-900 {
   background-color: #353535;
 }
@@ -63,6 +67,10 @@
 
 .txt-neutral-700 {
   color: #555555;
+}
+
+.txt-neutral-800 {
+  color: #444;
 }
 
 .txt-neutral-900 {
@@ -956,23 +964,28 @@ footer li .iconed-link {
   right: 1.5rem;
   font-size: 1.771561rem;
 }
+.card__infos .card__like .fas {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(-10deg, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: opacity 150ms 450ms;
+}
+.card__infos .card__like .fas:hover {
+  opacity: 1;
+}
 .card__infos .card__like .far {
   position: absolute;
   top: 0;
   right: 0;
+  background: white;
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 400ms;
 }
 .card__infos .card__like .far:hover {
   opacity: 0;
-}
-.card__infos .card__like .fas {
-  color: #9356dc;
-  opacity: 0;
-  transition: opacity 300ms;
-}
-.card__infos .card__like .fas:hover {
-  opacity: 1;
 }
 .card__title {
   font-size: 1.21rem;
