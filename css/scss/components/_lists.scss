@@ -12,7 +12,7 @@
     margin: $grid-2 0 $grid-2 $grid-2;
     padding: $grid-3 $grid-4 $grid-3 $grid-3;
     border-radius: $grid-3;
-    box-shadow: $grid-xs $grid-1 $grid-1 $neutral-200;
+    @include light-box-shadow;
 
     background: $neutral-100;
   }

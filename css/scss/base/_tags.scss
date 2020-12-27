@@ -15,32 +15,46 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+a {
+  color: $neutral-900;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $primary-500;
+  text-decoration: overline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: $grid-1 0;
+}
+
+h1 {
   font-size: $h1-size;
 }
 
 h2 {
-  margin: $grid-1 0;
   font-size: $h2-size;
 }
 
 h3 {
-  margin: $grid-1 0;
   font-size: $h3-size;
 }
 
 h4 {
-  margin: $grid-1 0;
   font-size: $h4-size;
 }
 
 h5 {
-  margin: $grid-1 0;
   font-size: $h5-size;
 }
 
 h6 {
-  margin: $grid-1 0;
   font-size: $h6-size;
 }

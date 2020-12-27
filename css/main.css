@@ -821,33 +821,47 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+a {
+  color: #353535;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9356dc;
+  text-decoration: overline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0.5rem 0;
+}
+
+h1 {
   font-size: 1.771561rem;
 }
 
 h2 {
-  margin: 0.5rem 0;
   font-size: 1.61051rem;
 }
 
 h3 {
-  margin: 0.5rem 0;
   font-size: 1.4641rem;
 }
 
 h4 {
-  margin: 0.5rem 0;
   font-size: 1.331rem;
 }
 
 h5 {
-  margin: 0.5rem 0;
   font-size: 1.21rem;
 }
 
 h6 {
-  margin: 0.5rem 0;
   font-size: 1.1rem;
 }
 
@@ -872,6 +886,70 @@ h6 {
 .c-btn--cta {
   color: white;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
+  overflow: hidden;
+}
+.card a:hover {
+  color: #353535;
+  text-decoration: none;
+}
+.card__img {
+  position: relative;
+  height: 11rem;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__img .card__badge {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  color: #2f9078;
+  font-weight: 700;
+  background: #99e2d0;
+}
+.card__infos {
+  position: relative;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+}
+.card__infos .card__like {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.771561rem;
+}
+.card__infos .card__like .far {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.card__infos .card__like .far:hover {
+  opacity: 0;
+}
+.card__infos .card__like .fas {
+  color: #9356dc;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.card__infos .card__like .fas:hover {
+  opacity: 1;
+}
+.card__title {
+  font-size: 1.21rem;
+}
+.card__text {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .c-step-list {
