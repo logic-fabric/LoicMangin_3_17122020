@@ -1,5 +1,12 @@
 header {
+  position: relative;
+
   .l-box-location {
     box-shadow: inset 0 $grid-xs $grid-xs $neutral-300;
+  }
+
+  a {
+    position: absolute;
+    top: -$grid-xs;
   }
 }

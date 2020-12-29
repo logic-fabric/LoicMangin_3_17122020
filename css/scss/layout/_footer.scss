@@ -14,9 +14,14 @@ footer {
 
   li {
     position: relative;
+
     a {
       color: white;
       font-weight: 400;
+    }
+
+    a:hover {
+      color: $neutral-200;
     }
 
     .iconed-link {
