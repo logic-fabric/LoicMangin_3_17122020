@@ -1120,7 +1120,7 @@ footer li .iconed-link {
 }
 .p-restaurant__menu h1,
 .p-restaurant__menu h2,
-.p-restaurant__menu hr {
+.p-restaurant__menu h2::after {
   margin-left: 0.25rem;
 }
 .p-restaurant__menu h2 {
@@ -1131,10 +1131,13 @@ footer li .iconed-link {
 .p-restaurant__menu h3 {
   font-size: 1.1rem;
 }
-.p-restaurant__menu hr {
+.p-restaurant__menu h2::after {
+  display: block;
   width: 3rem;
   height: 0.25rem;
+  margin: 0.5rem 0;
   border: 0;
+  content: "";
   background: #99e2d0;
 }
 .p-restaurant__menu section {
