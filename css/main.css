@@ -1083,10 +1083,9 @@ footer {
   color: white;
   background: #444;
 }
-footer h2 {
-  padding-bottom: 1rem;
-  font-family: Shrikhand, cursive;
-  font-size: 1.4641rem;
+footer .c-logo__img {
+  height: 1.331rem;
+  margin: 0.5rem 0 1.5rem 0;
 }
 footer li {
   position: relative;

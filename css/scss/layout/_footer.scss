@@ -5,11 +5,9 @@ footer {
 
   background: $neutral-800;
 
-  h2 {
-    padding-bottom: $grid-2;
-
-    font-family: $logo-font;
-    font-size: $h3-size;
+  .c-logo__img {
+    height: $h4-size;
+    margin: $grid-1 0 $grid-3 0;
   }
 
   li {
