@@ -52,7 +52,7 @@
         </div>
       </header>
 
-      <main>
+      <main class="p-restaurant bg-neutral-100">
         <div class="p-restaurant__img">
           <img
             src="../img/la-palette-du-gout.jpg"
@@ -60,7 +60,7 @@
           />
         </div>
 
-        <section>
+        <section class="p-restaurant__menu pt-4 pw-3">
           <h1>
             La palette du goût
             <span class="c-heart-icon-box">
@@ -76,11 +76,16 @@
 
             <ul>
               <li>
-                <h3>Fricassée d'escargots</h3>
-                <p>
-                  Au pimet d'espelette
-                  <span>25&nbsp;€</span>
-                </p>
+                <div class="p-menu-item__infos">
+                  <h3>Fricassée d'escargots</h3>
+                  <p>Au pimet d'espelette</p>
+                </div>
+
+                <div class="p-menu-item__price">25&nbsp;€</div>
+
+                <div class="p-menu-item__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </li>
             </ul>
           </section>
@@ -92,11 +97,16 @@
 
             <ul>
               <li>
-                <h3>Filet de boeuf aux herbes</h3>
-                <p>
-                  Accompagné de sa ribambelle de légumes
-                  <span>40&nbsp;€</span>
-                </p>
+                <div class="p-menu-item__infos">
+                  <h3>Filet de boeuf aux herbes</h3>
+                  <p>Accompagné de sa ribambelle de légumes</p>
+                </div>
+
+                <div class="p-menu-item__price">40&nbsp;€</div>
+
+                <div class="p-menu-item__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </li>
             </ul>
           </section>
@@ -107,17 +117,21 @@
 
             <ul>
               <li>
-                <h3>Paris-Brest</h3>
+                <div class="p-menu-item__infos">
+                  <h3>Paris-Brest</h3>
+                  <p>Revisité</p>
+                </div>
 
-                <p>
-                  Revisité
-                  <span>18&nbsp;€</span>
-                </p>
+                <div class="p-menu-item__price">18&nbsp;€</div>
+
+                <div class="p-menu-item__check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </li>
             </ul>
           </section>
 
-          <a href="#" class="c-btn c-btn--cta block w-max-content m-auto">
+          <a href="#" class="c-btn c-btn--cta block w-max-content m-auto mt-4">
             Commander
           </a>
         </section>
