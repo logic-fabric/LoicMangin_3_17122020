@@ -3,6 +3,8 @@
   @include light-box-shadow;
   overflow: hidden;
 
+  transition: box-shadow 300ms, transform 250ms;
+
   a:hover {
     color: $neutral-900;
     text-decoration: none;
@@ -57,4 +59,10 @@
 
     font-size: $h6-size;
   }
+}
+
+.c-card:hover {
+  @include light-box-shadow-hover;
+
+  transform: translateY(-$grid-sm);
 }

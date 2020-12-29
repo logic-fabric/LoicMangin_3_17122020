@@ -15,11 +15,11 @@
 
     background: $brand-gradient;
 
-    transition: box-shadow 400ms, opacity 400ms;
+    transition: box-shadow 300ms, opacity 300ms;
   }
 
   &--cta:hover {
-    @include btn-hover-box-shadow;
+    @include btn-box-shadow-hover;
 
     color: white;
 

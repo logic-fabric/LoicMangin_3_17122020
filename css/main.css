@@ -898,7 +898,7 @@ ul li {
 .c-btn--cta {
   color: white;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
-  transition: box-shadow 400ms, opacity 400ms;
+  transition: box-shadow 300ms, opacity 300ms;
 }
 .c-btn--cta:hover {
   box-shadow: 0.25rem 0.5rem 1rem #878787;
@@ -910,6 +910,7 @@ ul li {
   border-radius: 1rem;
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   overflow: hidden;
+  transition: box-shadow 300ms, transform 250ms;
 }
 .c-card a:hover {
   color: #353535;
@@ -950,6 +951,11 @@ ul li {
 .c-card__text {
   padding-bottom: 1rem;
   font-size: 1.1rem;
+}
+
+.c-card:hover {
+  box-shadow: 0.25rem 0.5rem 1rem #b9b9b9;
+  transform: translateY(-0.25rem);
 }
 
 /* ----------------------------------
