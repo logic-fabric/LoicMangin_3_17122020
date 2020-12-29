@@ -965,7 +965,22 @@ footer li .iconed-link {
   right: 1.5rem;
   font-size: 1.771561rem;
 }
-.c-card__infos .c-card__like .fas {
+.c-card__title {
+  font-size: 1.21rem;
+}
+.c-card__text {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* ----------------------------------
+   Heart icon with filling transition
+   ---------------------------------- */
+.c-heart-icon-box {
+  display: inline-block;
+  position: relative;
+}
+.c-heart-icon-box .fas {
   color: transparent;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
@@ -974,10 +989,10 @@ footer li .iconed-link {
   opacity: 1;
   transition: opacity 150ms 450ms;
 }
-.c-card__infos .c-card__like .fas:hover {
+.c-heart-icon-box .fas:hover {
   opacity: 1;
 }
-.c-card__infos .c-card__like .far {
+.c-heart-icon-box .far {
   position: absolute;
   top: 0;
   right: 0;
@@ -985,15 +1000,8 @@ footer li .iconed-link {
   opacity: 1;
   transition: opacity 400ms;
 }
-.c-card__infos .c-card__like .far:hover {
+.c-heart-icon-box .far:hover {
   opacity: 0;
-}
-.c-card__title {
-  font-size: 1.21rem;
-}
-.c-card__text {
-  padding-bottom: 1rem;
-  font-size: 1.1rem;
 }
 
 .c-step-list {

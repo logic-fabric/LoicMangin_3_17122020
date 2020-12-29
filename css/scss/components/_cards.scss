@@ -45,39 +45,6 @@
       right: $grid-3;
 
       font-size: $h1-size;
-
-      .fas {
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-
-        background: $brand-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-
-        opacity: 1;
-
-        transition: opacity 150ms 450ms;
-      }
-
-      .fas:hover {
-        opacity: 1;
-      }
-
-      .far {
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        background: white;
-
-        opacity: 1;
-
-        transition: opacity 400ms;
-      }
-
-      .far:hover {
-        opacity: 0;
-      }
     }
   }
 
