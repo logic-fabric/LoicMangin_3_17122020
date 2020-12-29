@@ -910,6 +910,7 @@ ul li {
   border-radius: 1rem;
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   overflow: hidden;
+  background: white;
   transition: box-shadow 300ms, transform 250ms;
 }
 .c-card a:hover {
@@ -1153,6 +1154,9 @@ footer li .iconed-link {
 }
 .p-restaurant__menu section {
   margin-top: 2rem;
+}
+.p-restaurant__menu .c-heart-icon-box .far.fa-heart {
+  background: #f7f7f7;
 }
 
 /*# sourceMappingURL=main.css.map */
