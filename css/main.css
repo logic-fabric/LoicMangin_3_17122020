@@ -1011,6 +1011,49 @@ ul li {
   font-size: 1.331rem;
 }
 
+.c-item-list li {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
+  background: white;
+}
+.c-item-list .c-item-list__infos {
+  width: 13rem;
+  padding-left: 0.5rem;
+  overflow: hidden;
+}
+.c-item-list .c-item-list__infos .c-item-list__title,
+.c-item-list .c-item-list__infos .c-item-list__details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.c-item-list .c-item-list__infos .c-item-list__title {
+  height: 1.25rem;
+}
+.c-item-list .c-item-list__infos .c-item-list__details {
+  height: 1.125rem;
+}
+.c-item-list .c-item-list__price {
+  position: relative;
+  top: 2.25rem;
+  margin: 0 1rem;
+  color: #555555;
+  font-weight: 700;
+}
+.c-item-list .c-item-list__check {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: #99e2d0;
+}
+.c-item-list .c-item-list__check .fa-check-circle {
+  margin: 1rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.771561rem;
+  background: #99e2d0;
+}
+
 .c-logo {
   margin: auto;
 }
@@ -1094,51 +1137,8 @@ footer li .iconed-link {
   border: 0;
   background: #99e2d0;
 }
-.p-restaurant__menu li {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
-  background: white;
-}
 .p-restaurant__menu section {
   margin-top: 2rem;
-}
-
-.p-menu-item__infos {
-  width: 13rem;
-  padding-left: 0.5rem;
-  overflow: hidden;
-}
-.p-menu-item__infos h3,
-.p-menu-item__infos p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.p-menu-item__infos h3 {
-  height: 1.25rem;
-}
-.p-menu-item__infos p {
-  height: 1.125rem;
-}
-.p-menu-item__price {
-  position: relative;
-  top: 2.25rem;
-  margin: 0 1rem;
-  color: #555555;
-  font-weight: 700;
-}
-.p-menu-item__check {
-  border-radius: 0 0.5rem 0.5rem 0;
-  background: #99e2d0;
-}
-.p-menu-item__check .fa-check-circle {
-  margin: 1rem;
-  border-radius: 50%;
-  color: white;
-  font-size: 1.771561rem;
-  background: #99e2d0;
 }
 
 /*# sourceMappingURL=main.css.map */
