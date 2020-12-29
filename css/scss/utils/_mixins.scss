@@ -5,3 +5,7 @@
 @mixin btn-box-shadow {
   box-shadow: $grid-xs $grid-sm $grid-1 $neutral-300;
 }
+
+@mixin btn-hover-box-shadow {
+  box-shadow: $grid-sm $grid-1 $grid-2 $neutral-500;
+}

@@ -898,6 +898,12 @@ ul li {
 .c-btn--cta {
   color: white;
   background: linear-gradient(-10deg, #9356dc, #ff79da);
+  transition: box-shadow 400ms, opacity 400ms;
+}
+.c-btn--cta:hover {
+  box-shadow: 0.25rem 0.5rem 1rem #878787;
+  color: white;
+  opacity: 0.87;
 }
 
 .c-card {
