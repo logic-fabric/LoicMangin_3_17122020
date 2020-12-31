@@ -1138,6 +1138,7 @@ footer li .iconed-link {
 .p-restaurant__menu h2 {
   color: #555555;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .p-restaurant__menu h2,
 .p-restaurant__menu h3 {
