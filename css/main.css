@@ -1046,40 +1046,43 @@ ul li {
 
 .c-item-list label {
   display: flex;
-  width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
+  overflow: hidden;
   background: white;
 }
-.c-item-list .c-item-list__infos {
+.c-item-list__description {
   width: 13rem;
   padding-left: 0.5rem;
   overflow: hidden;
 }
-.c-item-list .c-item-list__infos .c-item-list__title,
-.c-item-list .c-item-list__infos .c-item-list__details {
+.c-item-list__title, .c-item-list__details {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.c-item-list .c-item-list__infos .c-item-list__title {
+.c-item-list__title {
   height: 1.25rem;
 }
-.c-item-list .c-item-list__infos .c-item-list__details {
+.c-item-list__details {
   height: 1.125rem;
 }
-.c-item-list .c-item-list__price {
+.c-item-list__moving-box {
+  display: flex;
+  transform: translateX(4rem);
+}
+.c-item-list__price {
   position: relative;
   top: 2.25rem;
   margin: 0 1rem;
   color: #555555;
   font-weight: 700;
 }
-.c-item-list .c-item-list__check {
+.c-item-list__check {
   border-radius: 0 0.5rem 0.5rem 0;
   background: #99e2d0;
 }
-.c-item-list .c-item-list__check .fa-check-circle {
+.c-item-list__check .fa-check-circle {
   margin: 1rem;
   border-radius: 50%;
   color: white;
