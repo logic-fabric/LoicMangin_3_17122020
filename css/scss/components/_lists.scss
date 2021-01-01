@@ -43,6 +43,8 @@
 }
 
 .c-item-list {
+  $moving-box-transition-duration: 300ms;
+
   label {
     display: flex;
 
@@ -79,6 +81,8 @@
     display: flex;
 
     transform: translateX($grid-8);
+
+    transition: transform $moving-box-transition-duration;
   }
 
   &__price {
@@ -95,6 +99,9 @@
     border-radius: 0 $grid-1 $grid-1 0;
 
     background: $tertiary-300;
+    transform: scaleX(0.6);
+
+    transition: transform $moving-box-transition-duration;
 
     .fa-check-circle {
       margin: $grid-2;
@@ -104,6 +111,23 @@
       font-size: $h1-size;
 
       background: $tertiary-300;
+      transform: rotate(-180deg);
+
+      transition: transform $moving-box-transition-duration;
+    }
+  }
+
+  label:hover {
+    .c-item-list__moving-box {
+      transform: translateX(0);
+    }
+
+    .c-item-list__check {
+      transform: scaleX(1);
+    }
+
+    .fa-check-circle {
+      transform: rotate(360deg);
     }
   }
 }

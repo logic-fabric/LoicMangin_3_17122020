@@ -1070,6 +1070,7 @@ ul li {
 .c-item-list__moving-box {
   display: flex;
   transform: translateX(4rem);
+  transition: transform 300ms;
 }
 .c-item-list__price {
   position: relative;
@@ -1081,6 +1082,8 @@ ul li {
 .c-item-list__check {
   border-radius: 0 0.5rem 0.5rem 0;
   background: #99e2d0;
+  transform: scaleX(0.6);
+  transition: transform 300ms;
 }
 .c-item-list__check .fa-check-circle {
   margin: 1rem;
@@ -1088,6 +1091,17 @@ ul li {
   color: white;
   font-size: 1.771561rem;
   background: #99e2d0;
+  transform: rotate(-180deg);
+  transition: transform 300ms;
+}
+.c-item-list label:hover .c-item-list__moving-box {
+  transform: translateX(0);
+}
+.c-item-list label:hover .c-item-list__check {
+  transform: scaleX(1);
+}
+.c-item-list label:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
 
 .c-logo {
