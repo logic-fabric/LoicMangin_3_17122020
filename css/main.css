@@ -92,6 +92,21 @@
   display: flex;
 }
 
+/* ==============
+   SCREEN READERS
+   ============== */
+.sr-only {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 /* =====
    WIDTH
    ===== */
@@ -843,6 +858,11 @@ a:hover {
   color: #555555;
 }
 
+fieldset {
+  padding: 0;
+  border: none;
+}
+
 h1,
 h2,
 h3,
@@ -1024,9 +1044,9 @@ ul li {
   font-size: 1.331rem;
 }
 
-.c-item-list li {
+.c-item-list label {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   background: white;

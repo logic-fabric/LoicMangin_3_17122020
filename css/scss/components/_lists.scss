@@ -43,10 +43,10 @@
 }
 
 .c-item-list {
-  li {
+  label {
     display: flex;
-    justify-content: space-between;
 
+    width: 100%;
     border-radius: $grid-1;
     @include light-box-shadow;
 
