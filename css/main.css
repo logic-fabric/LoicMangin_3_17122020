@@ -1050,6 +1050,7 @@ ul li {
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   overflow: hidden;
   background: white;
+  opacity: 0;
 }
 .c-item-list__description {
   width: 13rem;
@@ -1104,6 +1105,43 @@ ul li {
   transform: rotate(360deg);
 }
 
+label[for=starter-1],
+label[for=main-course-1],
+label[for=dessert-1] {
+  animation: fade-out-item 500ms ease-out 0ms forwards;
+}
+
+label[for=starter-2],
+label[for=main-course-2],
+label[for=dessert-2] {
+  animation: fade-out-item 500ms ease-out 200ms forwards;
+}
+
+label[for=starter-3],
+label[for=main-course-3],
+label[for=dessert-3] {
+  animation: fade-out-item 500ms ease-out 400ms forwards;
+}
+
+label[for=starter-4],
+label[for=main-course-4],
+label[for=dessert-4] {
+  animation: fade-out-item 500ms ease-out 600ms forwards;
+}
+
+@keyframes fade-out-item {
+  0% {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .c-logo {
   margin: auto;
 }

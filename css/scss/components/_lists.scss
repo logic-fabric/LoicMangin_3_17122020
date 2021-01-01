@@ -53,6 +53,7 @@
     overflow: hidden;
 
     background: white;
+    opacity: 0;
   }
 
   &__description {
@@ -129,5 +130,27 @@
     .fa-check-circle {
       transform: rotate(360deg);
     }
+  }
+}
+
+@for $i from 1 through 4 {
+  label[for="starter-#{$i}"],
+  label[for="main-course-#{$i}"],
+  label[for="dessert-#{$i}"] {
+    animation: fade-out-item 500ms ease-out 200ms * ($i - 1) forwards;
+  }
+}
+
+@keyframes fade-out-item {
+  0% {
+    opacity: 0;
+    transform: translateY($grid-1);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
