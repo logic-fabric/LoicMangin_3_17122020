@@ -56,34 +56,34 @@ $spacings: (
    PADDINGS
    ======== */
 
-   @each $step, $spacing in $spacings {
-    .p-#{$step} {
-      padding: #{$spacing};
-    }
-  
-    .ph-#{$step} {
-      padding-top: #{$spacing};
-      padding-bottom: #{$spacing};
-    }
-
-    .pw-#{$step} {
-      padding-left: #{$spacing};
-      padding-right: #{$spacing};
-    }
-  
-    .pt-#{$step} {
-      padding-top: #{$spacing};
-    }
-  
-    .pr-#{$step} {
-      padding-right: #{$spacing};
-    }
-  
-    .pb-#{$step} {
-      padding-bottom: #{$spacing};
-    }
-  
-    .pl-#{$step} {
-      padding-left: #{$spacing};
-    }
+@each $step, $spacing in $spacings {
+  .p-#{$step} {
+    padding: #{$spacing};
   }
+
+  .ph-#{$step} {
+    padding-top: #{$spacing};
+    padding-bottom: #{$spacing};
+  }
+
+  .pw-#{$step} {
+    padding-left: #{$spacing};
+    padding-right: #{$spacing};
+  }
+
+  .pt-#{$step} {
+    padding-top: #{$spacing};
+  }
+
+  .pr-#{$step} {
+    padding-right: #{$spacing};
+  }
+
+  .pb-#{$step} {
+    padding-bottom: #{$spacing};
+  }
+
+  .pl-#{$step} {
+    padding-left: #{$spacing};
+  }
+}
