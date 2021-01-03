@@ -1,0 +1,37 @@
+$loading-duration: 3000ms;
+$exit-to-the-right-duration: 500ms;
+
+.p-home__loader-wrapper {
+  position: relative;
+
+  animation: exit-to-the-right $exit-to-the-right-duration
+    ($loading-duration - $exit-to-the-right-duration) forwards;
+}
+
+@keyframes exit-to-the-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+.p-home__loader {
+  z-index: 8000;
+
+  height: 100vh;
+  padding: 20vh 0;
+  margin: auto;
+
+  animation: fading-away-after-delay $loading-duration forwards;
+}
+
+@keyframes fading-away-after-delay {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

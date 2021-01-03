@@ -1,9 +1,11 @@
 .c-logo {
   margin: auto;
-  
+
   &__img {
     height: $h1-size;
   }
-}
 
-  
+  &__img--large {
+    height: 1.3 * $h1-size;
+  }
+}

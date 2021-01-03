@@ -26,9 +26,11 @@
 @import "components/cards";
 @import "components/icons";
 @import "components/lists";
+@import "components/loaders";
 @import "components/logo";
 
 // 6. Pages specific styles:
+@import "pages/home";
 @import "pages/restaurants";
 
 // 7. Themes:
