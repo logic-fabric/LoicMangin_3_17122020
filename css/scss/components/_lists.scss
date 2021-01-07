@@ -137,17 +137,17 @@
   label[for="starter-#{$i}"],
   label[for="main-course-#{$i}"],
   label[for="dessert-#{$i}"] {
-    animation: fade-out-item 500ms ease-out 200ms * ($i - 1) forwards;
+    animation: fade-in-item 500ms ease-out 200ms * ($i - 1) forwards;
   }
 }
 
-@keyframes fade-out-item {
+@keyframes fade-in-item {
   0% {
     opacity: 0;
     transform: translateY($grid-1);
   }
-  50% {
-    opacity: 0.8;
+  25% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
