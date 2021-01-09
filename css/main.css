@@ -1509,38 +1509,49 @@ footer li .iconed-link {
 label[for=starter-1],
 label[for=main-course-1],
 label[for=dessert-1] {
-  animation: fade-out-item 500ms ease-out 0ms forwards;
+  animation: fade-in-item 500ms ease-out 0ms forwards;
 }
 
 label[for=starter-2],
 label[for=main-course-2],
 label[for=dessert-2] {
-  animation: fade-out-item 500ms ease-out 200ms forwards;
+  animation: fade-in-item 500ms ease-out 200ms forwards;
 }
 
 label[for=starter-3],
 label[for=main-course-3],
 label[for=dessert-3] {
-  animation: fade-out-item 500ms ease-out 400ms forwards;
+  animation: fade-in-item 500ms ease-out 400ms forwards;
 }
 
 label[for=starter-4],
 label[for=main-course-4],
 label[for=dessert-4] {
-  animation: fade-out-item 500ms ease-out 600ms forwards;
+  animation: fade-in-item 500ms ease-out 600ms forwards;
 }
 
-@keyframes fade-out-item {
+@keyframes fade-in-item {
   0% {
     opacity: 0;
     transform: translateY(0.5rem);
   }
-  50% {
-    opacity: 0.8;
+  25% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes spinning-circle {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .c-spinner {
@@ -1553,7 +1564,7 @@ label[for=dessert-4] {
   position: absolute;
   border: 0.5rem solid white;
   border-radius: 50%;
-  animation: spinning-circle 950ms linear infinite;
+  animation: spinning-circle 900ms linear infinite;
 }
 .c-spinner__outer-circle {
   top: 0.5rem;
@@ -1570,21 +1581,10 @@ label[for=dessert-4] {
   height: 6rem;
   border-color: transparent #99e2d0 #ff79da #9356dc;
   border-right-width: 0.25rem;
-  animation-duration: 800ms;
+  animation-duration: 700ms;
   animation-delay: 50ms;
 }
 
-@keyframes spinning-circle {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .c-logo {
   margin: auto;
 }

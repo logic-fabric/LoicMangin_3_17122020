@@ -1,4 +1,19 @@
 $spinner-size: 10rem;
+$spinning-duration: 900ms;
+$inner-spinning-duration: 700ms;
+$inner-spinning-delay: 50ms;
+
+@keyframes spinning-circle {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .c-spinner {
   position: relative;
@@ -13,7 +28,7 @@ $spinner-size: 10rem;
     border: 0.5rem solid white;
     border-radius: 50%;
 
-    animation: spinning-circle 950ms linear infinite;
+    animation: spinning-circle $spinning-duration linear infinite;
   }
 
   &__outer-circle {
@@ -35,19 +50,7 @@ $spinner-size: 10rem;
     border-color: transparent $tertiary-300 $secondary-500 $primary-500;
     border-right-width: 0.25rem;
 
-    animation-duration: 800ms;
-    animation-delay: 50ms;
-  }
-}
-
-@keyframes spinning-circle {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: rotate(360deg);
+    animation-duration: $inner-spinning-duration;
+    animation-delay: $inner-spinning-delay;
   }
 }
