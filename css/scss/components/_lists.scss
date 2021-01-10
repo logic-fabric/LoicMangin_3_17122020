@@ -42,8 +42,31 @@
   }
 }
 
+@for $i from 1 through 4 {
+  label[for="starter-#{$i}"],
+  label[for="main-course-#{$i}"],
+  label[for="dessert-#{$i}"] {
+    animation: fade-in-item 500ms ease-out 200ms * ($i - 1) forwards;
+  }
+}
+
+@keyframes fade-in-item {
+  0% {
+    opacity: 0;
+    transform: translateY($grid-1);
+  }
+  25% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .c-item-list {
-  $moving-box-transition-duration: 300ms;
+
+  $checkbox-transition-duration: 350ms;
 
   label {
     display: flex;
@@ -57,7 +80,7 @@
   }
 
   &__description {
-    width: 13 * $grid-2;
+    width: 100%;
     padding-left: $grid-1;
     overflow: hidden;
   }
@@ -78,18 +101,8 @@
     height: 2.25 * $grid-1;
   }
 
-  &__moving-box {
-    display: flex;
-
-    transform: translateX($grid-8);
-
-    transition: transform $moving-box-transition-duration;
-  }
-
   &__price {
-    position: relative;
-    top: 4.5 * $grid-1;
-
+    padding-top: 2.25 * $grid-2;
     margin: 0 $grid-2;
 
     color: $neutral-700;
@@ -97,12 +110,13 @@
   }
 
   &__check {
+    width: 0;
     border-radius: 0 $grid-1 $grid-1 0;
+    overflow: hidden;
 
     background: $tertiary-300;
-    transform: scaleX(0.6);
 
-    transition: transform $moving-box-transition-duration;
+    transition: width $checkbox-transition-duration;
 
     .fa-check-circle {
       margin: $grid-2;
@@ -114,43 +128,18 @@
       background: $tertiary-300;
       transform: rotate(-180deg);
 
-      transition: transform $moving-box-transition-duration;
+      transition: transform $checkbox-transition-duration;
     }
   }
 
   label:hover {
-    .c-item-list__moving-box {
-      transform: translateX(0);
-    }
 
     .c-item-list__check {
-      transform: scaleX(1);
+      width: 6 * $grid-2;
     }
 
     .fa-check-circle {
       transform: rotate(360deg);
     }
-  }
-}
-
-@for $i from 1 through 4 {
-  label[for="starter-#{$i}"],
-  label[for="main-course-#{$i}"],
-  label[for="dessert-#{$i}"] {
-    animation: fade-in-item 500ms ease-out 200ms * ($i - 1) forwards;
-  }
-}
-
-@keyframes fade-in-item {
-  0% {
-    opacity: 0;
-    transform: translateY($grid-1);
-  }
-  25% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

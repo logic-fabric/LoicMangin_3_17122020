@@ -386,6 +386,7 @@ a:hover {
 }
 
 fieldset {
+  min-inline-size: auto;
   padding: 0;
   border: none;
 }
@@ -1445,67 +1446,6 @@ footer li .iconed-link {
   font-size: 1.331rem;
 }
 
-.c-item-list label {
-  display: flex;
-  border-radius: 0.5rem;
-  box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
-  overflow: hidden;
-  background: white;
-  opacity: 0;
-}
-.c-item-list__description {
-  width: 13rem;
-  padding-left: 0.5rem;
-  overflow: hidden;
-}
-.c-item-list__title, .c-item-list__details {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.c-item-list__title {
-  height: 1.25rem;
-}
-.c-item-list__details {
-  height: 1.125rem;
-}
-.c-item-list__moving-box {
-  display: flex;
-  transform: translateX(4rem);
-  transition: transform 300ms;
-}
-.c-item-list__price {
-  position: relative;
-  top: 2.25rem;
-  margin: 0 1rem;
-  color: #555555;
-  font-weight: 700;
-}
-.c-item-list__check {
-  border-radius: 0 0.5rem 0.5rem 0;
-  background: #99e2d0;
-  transform: scaleX(0.6);
-  transition: transform 300ms;
-}
-.c-item-list__check .fa-check-circle {
-  margin: 1rem;
-  border-radius: 50%;
-  color: white;
-  font-size: 1.771561rem;
-  background: #99e2d0;
-  transform: rotate(-180deg);
-  transition: transform 300ms;
-}
-.c-item-list label:hover .c-item-list__moving-box {
-  transform: translateX(0);
-}
-.c-item-list label:hover .c-item-list__check {
-  transform: scaleX(1);
-}
-.c-item-list label:hover .fa-check-circle {
-  transform: rotate(360deg);
-}
-
 label[for=starter-1],
 label[for=main-course-1],
 label[for=dessert-1] {
@@ -1543,6 +1483,59 @@ label[for=dessert-4] {
     transform: translateY(0);
   }
 }
+.c-item-list label {
+  display: flex;
+  border-radius: 0.5rem;
+  box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
+  overflow: hidden;
+  background: white;
+  opacity: 0;
+}
+.c-item-list__description {
+  width: 100%;
+  padding-left: 0.5rem;
+  overflow: hidden;
+}
+.c-item-list__title, .c-item-list__details {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.c-item-list__title {
+  height: 1.25rem;
+}
+.c-item-list__details {
+  height: 1.125rem;
+}
+.c-item-list__price {
+  padding-top: 2.25rem;
+  margin: 0 1rem;
+  color: #555555;
+  font-weight: 700;
+}
+.c-item-list__check {
+  width: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  overflow: hidden;
+  background: #99e2d0;
+  transition: width 350ms;
+}
+.c-item-list__check .fa-check-circle {
+  margin: 1rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.771561rem;
+  background: #99e2d0;
+  transform: rotate(-180deg);
+  transition: transform 350ms;
+}
+.c-item-list label:hover .c-item-list__check {
+  width: 6rem;
+}
+.c-item-list label:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+
 @keyframes spinning-circle {
   0% {
     transform: rotate(0);
