@@ -1,5 +1,10 @@
-@mixin width-wrapper {
+@mixin large-wrapper {
   max-width: $large-container-width;
+  margin: auto;
+}
+
+@mixin small-wrapper {
+  max-width: $small-container-width;
   margin: auto;
 }
 

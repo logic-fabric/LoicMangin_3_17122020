@@ -1,5 +1,11 @@
+.p-restaurant__header {
+  @include large-wrapper;
+}
+
 .p-restaurant__img img {
   width: 100%;
+
+  object-fit: cover;
 }
 
 .p-restaurant__menu {
@@ -51,7 +57,24 @@
     margin-top: $grid-4;
   }
 
+  .c-btn--cta {
+    width: max-content;
+    margin: $grid-4 auto 0 auto;
+  }
+
   .c-heart-icon-box .far.fa-heart {
     background: $neutral-100;
+  }
+}
+
+@media (min-width: $small-container-width) {
+  .p-restaurant__img img {
+    height: 16 * $grid-2;
+  }
+}
+
+@media (max-width: $small-breakpoint - 1) {
+  .p-restaurant__menu .p-restaurant__menu-wrapper {
+    @include small-wrapper;
   }
 }

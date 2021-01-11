@@ -35,30 +35,30 @@
   </head>
 
   <body>
-    <div class="l-page-wrapper">
-      <header class="flex">
-        <a class="p-3" href="../index.html">
-          <i class="fas fa-arrow-left"></i>
-        </a>
+    <header class="flex p-restaurant__header">
+      <a class="p-3" href="../index.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
 
-        <div class="c-logo ph-2">
-          <img
-            class="c-logo__img block m-auto"
-            src="../img/logo-ohmyfood.png"
-            alt="Logo d'ohmyfood"
-          />
-        </div>
-      </header>
+      <div class="c-logo ph-2">
+        <img
+          class="c-logo__img block m-auto"
+          src="../img/logo-ohmyfood.png"
+          alt="Logo d'ohmyfood"
+        />
+      </div>
+    </header>
 
-      <main class="p-restaurant bg-neutral-100">
-        <div class="p-restaurant__img">
-          <img
-            src="../img/la-palette-du-gout.jpg"
-            alt="Un plat de La palette du goût"
-          />
-        </div>
+    <main class="p-restaurant bg-neutral-100">
+      <div class="p-restaurant__img">
+        <img
+          src="../img/la-palette-du-gout.jpg"
+          alt="Un plat de La palette du goût"
+        />
+      </div>
 
-        <section class="p-restaurant__menu pt-4 pw-3">
+      <section class="p-restaurant__menu pt-4 pw-3">
+        <div class="p-restaurant__menu-wrapper">
           <h1>
             La palette du goût
             <span class="c-heart-icon-box">
@@ -67,8 +67,8 @@
             </span>
           </h1>
 
-          <form action="">
-            <fieldset>
+          <form class="row-12 has-gutter-lg" action="">
+            <fieldset class="lg4 md4 sm12">
               <legend>
                 <h2>Entrées</h2>
               </legend>
@@ -145,7 +145,7 @@
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="lg4 md4 sm12">
               <legend>
                 <h2>Plats</h2>
               </legend>
@@ -178,7 +178,7 @@
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="lg4 md4 sm12">
               <legend>
                 <h2>Desserts</h2>
               </legend>
@@ -207,17 +207,14 @@
               </ul>
             </fieldset>
 
-            <a
-              href="#"
-              class="c-btn c-btn--cta block w-max-content m-auto mt-4"
-            >
-              Commander
-            </a>
+            <a class="c-btn c-btn--cta block" href="#"> Commander </a>
           </form>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer>
+    <footer>
+      <div class="l-footer__content">
         <div class="c-logo__box">
           <img
             class="c-logo__img block"
@@ -226,8 +223,8 @@
           />
         </div>
 
-        <div>
-          <ul>
+        <div class="row-12">
+          <ul class="lg6 md6 sm12">
             <li>
               <i class="fas fa-utensils"></i>
               <a href="#">
@@ -242,7 +239,7 @@
             </li>
           </ul>
 
-          <ul>
+          <ul class="lg6 md6 sm12">
             <li>
               <a href="#"> Mentions légales</a>
             </li>
@@ -251,7 +248,7 @@
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

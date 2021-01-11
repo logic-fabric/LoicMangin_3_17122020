@@ -2190,11 +2190,6 @@ ul li {
   font-size: 1.1rem;
 }
 
-.l-page-wrapper {
-  max-width: 1200px;
-  margin: auto;
-}
-
 header {
   position: relative;
 }
@@ -2595,8 +2590,14 @@ label[for=dessert-4] {
     margin-left: auto;
   }
 }
+.p-restaurant__header {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .p-restaurant__img img {
   width: 100%;
+  object-fit: cover;
 }
 
 .p-restaurant__menu {
@@ -2636,8 +2637,24 @@ label[for=dessert-4] {
 .p-restaurant__menu section {
   margin-top: 2rem;
 }
+.p-restaurant__menu .c-btn--cta {
+  width: max-content;
+  margin: 2rem auto 0 auto;
+}
 .p-restaurant__menu .c-heart-icon-box .far.fa-heart {
   background: #f7f7f7;
+}
+
+@media (min-width: 480px) {
+  .p-restaurant__img img {
+    height: 16rem;
+  }
+}
+@media (max-width: 839px) {
+  .p-restaurant__menu .p-restaurant__menu-wrapper {
+    max-width: 480px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

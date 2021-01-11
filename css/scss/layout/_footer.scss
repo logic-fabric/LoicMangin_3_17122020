@@ -6,7 +6,7 @@ footer {
   background: $neutral-800;
 
   .l-footer__content {
-    @include width-wrapper;
+    @include large-wrapper;
   }
 
   .c-logo__img {
