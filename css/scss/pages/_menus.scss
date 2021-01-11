@@ -1,14 +1,14 @@
-.p-restaurant__header {
+.p-menu__header {
   @include large-wrapper;
 }
 
-.p-restaurant__img img {
+.p-menu__img img {
   width: 100%;
 
   object-fit: cover;
 }
 
-.p-restaurant__menu {
+.p-menu__content {
   position: relative;
   top: -$grid-6;
 
@@ -68,13 +68,13 @@
 }
 
 @media (min-width: $small-container-width) {
-  .p-restaurant__img img {
+  .p-menu__img img {
     height: 16 * $grid-2;
   }
 }
 
 @media (max-width: $small-breakpoint - 1) {
-  .p-restaurant__menu .p-restaurant__menu-wrapper {
+  .p-menu__content .p-menu__content-wrapper {
     @include small-wrapper;
   }
 }

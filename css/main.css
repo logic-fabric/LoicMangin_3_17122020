@@ -2590,42 +2590,42 @@ label[for=dessert-4] {
     margin-left: auto;
   }
 }
-.p-restaurant__header {
+.p-menu__header {
   max-width: 1200px;
   margin: auto;
 }
 
-.p-restaurant__img img {
+.p-menu__img img {
   width: 100%;
   object-fit: cover;
 }
 
-.p-restaurant__menu {
+.p-menu__content {
   position: relative;
   top: -3rem;
   border-radius: 3rem 3rem 0 0;
   background: #f7f7f7;
 }
-.p-restaurant__menu h1 {
+.p-menu__content h1 {
   display: flex;
   justify-content: space-between;
   font-family: Shrikhand, cursive;
 }
-.p-restaurant__menu h1,
-.p-restaurant__menu h2,
-.p-restaurant__menu h2::after {
+.p-menu__content h1,
+.p-menu__content h2,
+.p-menu__content h2::after {
   margin-left: 0.25rem;
 }
-.p-restaurant__menu h2 {
+.p-menu__content h2 {
   color: #555555;
   font-weight: 400;
   text-transform: uppercase;
 }
-.p-restaurant__menu h2,
-.p-restaurant__menu h3 {
+.p-menu__content h2,
+.p-menu__content h3 {
   font-size: 1.1rem;
 }
-.p-restaurant__menu h2::after {
+.p-menu__content h2::after {
   display: block;
   width: 3rem;
   height: 0.25rem;
@@ -2634,24 +2634,24 @@ label[for=dessert-4] {
   content: "";
   background: #99e2d0;
 }
-.p-restaurant__menu section {
+.p-menu__content section {
   margin-top: 2rem;
 }
-.p-restaurant__menu .c-btn--cta {
+.p-menu__content .c-btn--cta {
   width: max-content;
   margin: 2rem auto 0 auto;
 }
-.p-restaurant__menu .c-heart-icon-box .far.fa-heart {
+.p-menu__content .c-heart-icon-box .far.fa-heart {
   background: #f7f7f7;
 }
 
 @media (min-width: 480px) {
-  .p-restaurant__img img {
+  .p-menu__img img {
     height: 16rem;
   }
 }
 @media (max-width: 839px) {
-  .p-restaurant__menu .p-restaurant__menu-wrapper {
+  .p-menu__content .p-menu__content-wrapper {
     max-width: 480px;
     margin: auto;
   }
