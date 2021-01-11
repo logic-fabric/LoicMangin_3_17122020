@@ -17,7 +17,8 @@
 
     background: $neutral-100;
 
-    span, i {
+    span,
+    i {
       display: inline-block;
     }
   }
@@ -70,7 +71,6 @@
 }
 
 .c-item-list {
-
   $checkbox-transition-duration: 350ms;
 
   label {
@@ -85,6 +85,8 @@
   }
 
   &__description {
+    display: block;
+
     width: 100%;
     padding-left: $grid-1;
     overflow: hidden;
@@ -92,6 +94,8 @@
 
   &__title,
   &__details {
+    display: block;
+
     overflow: hidden;
 
     text-overflow: ellipsis;
@@ -99,15 +103,20 @@
   }
 
   &__title {
-    height: 2.5 * $grid-1;
+    padding: $grid-2 $grid-sm $grid-sm $grid-sm;
+
+    font-size: $h6-size;
+    font-weight: 500;
   }
 
   &__details {
-    height: 2.25 * $grid-1;
+    padding: 0 $grid-sm $grid-1 $grid-sm;
   }
 
   &__price {
-    padding-top: 2.25 * $grid-2;
+    display: block;
+
+    padding-top: 2.75 * $grid-2;
     margin: 0 $grid-2;
 
     color: $neutral-700;
@@ -115,6 +124,8 @@
   }
 
   &__check {
+    display: block;
+
     width: 0;
     border-radius: 0 $grid-1 $grid-1 0;
     overflow: hidden;
@@ -124,7 +135,7 @@
     transition: width $checkbox-transition-duration;
 
     .fa-check-circle {
-      margin: $grid-2;
+      margin: $grid-3 $grid-2;
       border-radius: 50%;
 
       color: white;
@@ -138,7 +149,6 @@
   }
 
   label:hover {
-
     .c-item-list__check {
       width: 6 * $grid-2;
     }
