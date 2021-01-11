@@ -367,7 +367,6 @@ html {
   font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  background: #555555;
   scroll-behavior: smooth;
 }
 
@@ -384,6 +383,10 @@ a {
 
 a:hover {
   color: #555555;
+}
+
+article {
+  margin-bottom: 1.5rem;
 }
 
 fieldset {
@@ -424,6 +427,11 @@ h5 {
 
 h6 {
   font-size: 1.1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
 }
 
 ul {
@@ -578,7 +586,7 @@ ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 1064px) {
   .row-12 > .lg1 {
     width: calc((100% / 12) * 1 - 0.01px);
   }
@@ -868,7 +876,7 @@ ul li {
     margin-left: calc( (100% / 12) * 12- 1.5rem / 2 - 0.01px );
   }
 }
-@media (min-width: 600px) and (max-width: 799px) {
+@media (min-width: 840px) and (max-width: 1063px) {
   .row-12 > .md1 {
     width: calc((100% / 12) * 1 - 0.01px);
   }
@@ -1158,7 +1166,7 @@ ul li {
     margin-left: calc( (100% / 12) * 12- 1.5rem / 2 - 0.01px );
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 839px) {
   .row-12 > .sm1 {
     width: calc((100% / 12) * 1 - 0.01px);
   }
@@ -2183,9 +2191,8 @@ ul li {
 }
 
 .l-page-wrapper {
-  max-width: 24rem;
+  max-width: 1200px;
   margin: auto;
-  background: white;
 }
 
 header {
@@ -2203,6 +2210,10 @@ footer {
   padding: 1.5rem 1.5rem 2rem 1.5rem;
   color: white;
   background: #444;
+}
+footer .l-footer__content {
+  max-width: 1200px;
+  margin: auto;
 }
 footer .c-logo__img {
   height: 1.331rem;
@@ -2223,6 +2234,13 @@ footer li .iconed-link {
   left: 2rem;
 }
 
+@media (max-width: 839px) {
+  footer > * {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .c-btn {
   padding: 1rem 2rem;
   border: 0;
@@ -2335,12 +2353,16 @@ footer li .iconed-link {
   list-style: none;
 }
 .c-step-list li {
+  display: flex;
   position: relative;
   margin: 1rem 0 1rem 1rem;
   padding: 1.5rem 2rem 1.5rem 1.5rem;
   border-radius: 1.5rem;
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   background: #f7f7f7;
+}
+.c-step-list li span, .c-step-list li i {
+  display: inline-block;
 }
 .c-step-list__number {
   display: inline-block;
@@ -2497,6 +2519,7 @@ label[for=dessert-4] {
   margin: auto;
 }
 .c-logo__img {
+  width: auto;
   height: 1.771561rem;
 }
 .c-logo__img--large {
@@ -2530,14 +2553,48 @@ label[for=dessert-4] {
   z-index: 8000;
   margin: auto;
   overflow: hidden;
-  animation: height-shrinking 3000ms linear forwards;
+  animation: height-shrinking 0ms linear forwards;
 }
 
 .p-home__content-wrapper {
   overflow: hidden;
-  animation: height-expanding 3000ms linear forwards;
+  animation: height-expanding 0ms linear forwards;
 }
 
+@media (min-width: 840px) {
+  .p-home__hero {
+    background: white;
+  }
+  .p-home__hero h2 {
+    margin: 3rem;
+  }
+
+  .p-home__instructions {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .p-home__instructions h2 {
+    text-align: center;
+  }
+
+  #restaurants {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 3rem 3rem 0 0;
+  }
+}
+@media (max-width: 839px) {
+  .p-home__content-wrapper {
+    max-width: 100%;
+  }
+  .p-home__content-wrapper aside > *,
+.p-home__content-wrapper section > *,
+.p-home__content-wrapper #restaurants > * {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .p-restaurant__img img {
   width: 100%;
 }

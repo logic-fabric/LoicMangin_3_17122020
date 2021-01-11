@@ -38,106 +38,130 @@
   </head>
 
   <body>
-    <div class="l-page-wrapper">
-      <div class="p-home__loader-wrapper bg-neutral-100">
-        <div class="c-logo__box ph-8">
+    <div class="p-home__loader-wrapper">
+      <div class="c-logo__box ph-8">
+        <img
+          class="c-logo__img--large block m-auto"
+          src="img/logo-ohmyfood.png"
+          alt="Logo d'ohmyfood"
+        />
+      </div>
+
+      <div class="c-spinner">
+        <div class="c-spinner__outer-circle"></div>
+        <div class="c-spinner__inner-circle"></div>
+      </div>
+    </div>
+
+    <div class="p-home__content-wrapper">
+      <header>
+        <div class="c-logo__box ph-2">
           <img
-            class="c-logo__img--large block m-auto"
+            class="c-logo__img block m-auto"
             src="img/logo-ohmyfood.png"
             alt="Logo d'ohmyfood"
           />
         </div>
 
-        <div class="c-spinner">
-          <div class="c-spinner__outer-circle"></div>
-          <div class="c-spinner__inner-circle"></div>
+        <div class="l-box-location bg-neutral-200 txt-neutral-700 fw-500">
+          <p class="w-max-content m-auto ph-2">
+            <i class="fas fa-map-marker-alt inline-block mr-2"></i>
+            Paris, Belleville
+          </p>
         </div>
-      </div>
+      </header>
 
-      <div class="p-home__content-wrapper">
-        <header>
-          <div class="c-logo__box ph-2">
-            <img
-              class="c-logo__img block m-auto"
-              src="img/logo-ohmyfood.png"
-              alt="Logo d'ohmyfood"
-            />
-          </div>
+      <main class="row-12">
+        <section class="lg6 md6 sm12 p-home__hero pt-4 pb-6 bg-neutral-100">
+          <h1 class="mw-8 txt-center txt-h3">
+            Réservez le menu qui vous convient
+          </h1>
 
-          <div class="l-box-location bg-neutral-200 txt-neutral-700 fw-500">
-            <p class="w-max-content m-auto ph-2">
-              <i class="fas fa-map-marker-alt inline-block mr-2"></i>
-              Paris, Belleville
-            </p>
-          </div>
-        </header>
+          <h2 class="mw-4 mh-2 fw-300 txt-center txt-h5">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </h2>
 
-        <main>
-          <section class="pt-4 pb-6 bg-neutral-100">
-            <h1 class="mw-8 txt-center txt-h3">
-              Réservez le menu qui vous convient
-            </h1>
+          <a
+            href="#restaurants"
+            class="c-btn c-btn--cta block w-max-content m-auto mt-3"
+          >
+            Explorer nos restaurants
+          </a>
+        </section>
 
-            <h2 class="mx-4 mh-2 fw-300 txt-center txt-h5">
-              Découvrez des restaurants d'exception, sélectionnés par nos soins.
-            </h2>
+        <aside class="lg6 md6 sm12 p-home__instructions pw-2 ph-4">
+          <h2 class="txt-h3 mb-4">Fonctionnement</h2>
 
-            <a
-              href="#restaurants"
-              class="c-btn c-btn--cta block w-max-content m-auto mt-3"
-            >
-              Explorer nos restaurants
+          <ul class="c-step-list">
+            <li>
+              <span class="c-step-list__number"> 1</span>
+              <i class="fas fa-mobile-alt"></i>
+              <span>Choisissez un restaurant</span>
+            </li>
+            <li>
+              <span class="c-step-list__number">2</span>
+              <i class="fas fa-list-ul"></i>
+              <span>Composez votre menu</span>
+            </li>
+            <li>
+              <span class="c-step-list__number">3</span>
+              <i class="fas fa-store"></i>
+              <span>Dégustez au restaurant</span>
+            </li>
+          </ul>
+        </aside>
+
+        <section
+          class="lg12 md12 sm12 row-12 has-gutter-lg pw-2 ph-4 bg-neutral-100"
+          id="restaurants"
+        >
+          <h2 class="lg12 md12 sm12 mb-3 txt-h3">Restaurants</h2>
+
+          <article class="lg4 md6 sm12 c-card">
+            <a href="menus/la-palette-du-gout.html">
+              <div class="c-card__img">
+                <img
+                  src="img/la-palette-du-gout.jpg"
+                  alt="Un plat de La palette du goût"
+                />
+                <p class="c-card__badge">Nouveau</p>
+              </div>
+              <div class="c-card__infos">
+                <h3 class="c-card__title">La palette du goût</h3>
+                <p class="c-card__text">Ménilmontant</p>
+                <div class="c-card__like c-heart-icon-box">
+                  <i class="fas fa-heart"></i>
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
             </a>
-          </section>
+          </article>
 
-          <aside class="pw-2 ph-4">
-            <h2 class="txt-h3 mb-4">Fonctionnement</h2>
-
-            <ul class="c-step-list">
-              <li>
-                <span class="c-step-list__number"> 1</span>
-                <i class="fas fa-mobile-alt"></i>
-                Choisissez un restaurant
-              </li>
-              <li>
-                <span class="c-step-list__number">2</span>
-                <i class="fas fa-list-ul"></i>
-                Composez votre menu
-              </li>
-              <li>
-                <span class="c-step-list__number">3</span>
-                <i class="fas fa-store"></i>
-                Dégustez au restaurant
-              </li>
-            </ul>
-          </aside>
-
-          <section class="pw-2 pt-4 pb-8 bg-neutral-100" id="restaurants">
-            <h2 class="mb-3 txt-h3">Restaurants</h2>
-
-            <article class="c-card">
-              <a href="menus/la-palette-du-gout.html">
-                <div class="c-card__img">
-                  <img
-                    src="img/la-palette-du-gout.jpg"
-                    alt="Un plat de La palette du goût"
-                  />
-                  <p class="c-card__badge">Nouveau</p>
+          <article class="lg4 md6 sm12 c-card">
+            <!-- URL TO CHANGE: -->
+            <a href="menus/la-palette-du-gout.html">
+              <div class="c-card__img">
+                <img
+                  src="img/la-note-enchantee.jpg"
+                  alt="Un plat de La note enchantée"
+                />
+                <p class="c-card__badge">Nouveau</p>
+              </div>
+              <div class="c-card__infos">
+                <h3 class="c-card__title">La note enchantée</h3>
+                <p class="c-card__text">Charonne</p>
+                <div class="c-card__like c-heart-icon-box">
+                  <i class="fas fa-heart"></i>
+                  <i class="far fa-heart"></i>
                 </div>
-                <div class="c-card__infos">
-                  <h3 class="c-card__title">La palette du goût</h3>
-                  <p class="c-card__text">Ménilmontant</p>
-                  <div class="c-card__like c-heart-icon-box">
-                    <i class="fas fa-heart"></i>
-                    <i class="far fa-heart"></i>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </section>
-        </main>
+              </div>
+            </a>
+          </article>
+        </section>
+      </main>
 
-        <footer>
+      <footer>
+        <div class="l-footer__content">
           <div class="c-logo__box">
             <img
               class="c-logo__img block"
@@ -146,8 +170,8 @@
             />
           </div>
 
-          <div>
-            <ul>
+          <div class="row-12">
+            <ul class="lg6 md6 sm12">
               <li>
                 <i class="fas fa-utensils"></i>
                 <a href="#">
@@ -162,7 +186,7 @@
               </li>
             </ul>
 
-            <ul>
+            <ul class="lg6 md6 sm12">
               <li>
                 <a href="#"> Mentions légales</a>
               </li>
@@ -171,8 +195,8 @@
               </li>
             </ul>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

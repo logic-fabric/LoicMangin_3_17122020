@@ -1,6 +1,4 @@
 .l-page-wrapper {
-    max-width: 24rem;
-    margin: auto;
-
-    background: white; // to remove
+  max-width: $large-container-width;
+  margin: auto;
 }

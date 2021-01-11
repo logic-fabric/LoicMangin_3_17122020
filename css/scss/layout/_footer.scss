@@ -5,6 +5,10 @@ footer {
 
   background: $neutral-800;
 
+  .l-footer__content {
+    @include width-wrapper;
+  }
+
   .c-logo__img {
     height: $h4-size;
     margin: $grid-1 0 $grid-3 0;
@@ -26,5 +30,13 @@ footer {
       position: absolute;
       left: $grid-4;
     }
+  }
+}
+
+@media (max-width: $small-breakpoint - 1) {
+  footer > * {
+    max-width: $small-container-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

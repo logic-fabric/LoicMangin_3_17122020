@@ -1,4 +1,4 @@
-$loading-duration: 3000ms;
+$loading-duration: 000ms;
 $exit-to-the-right-duration: 500ms;
 
 @keyframes height-shrinking {
@@ -39,4 +39,43 @@ $exit-to-the-right-duration: 500ms;
   overflow: hidden;
 
   animation: height-expanding $loading-duration linear forwards;
+}
+
+@media (min-width: $small-breakpoint) {
+  .p-home__hero {
+    background: white;
+
+    h2 {
+      margin: $grid-6;
+    }
+  }
+
+  .p-home__instructions {
+    padding-left: $grid-4;
+    padding-right: $grid-4;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  #restaurants {
+    padding-left: $grid-3;
+    padding-right: $grid-3;
+    border-radius: $grid-6 $grid-6 0 0;
+  }
+}
+
+@media (max-width: $small-breakpoint - 1) {
+  .p-home__content-wrapper {
+    max-width: 100%;
+
+    aside > *,
+    section > *,
+    #restaurants > * {
+      max-width: $small-container-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }

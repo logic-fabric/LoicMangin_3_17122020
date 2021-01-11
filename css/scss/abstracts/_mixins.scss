@@ -1,3 +1,8 @@
+@mixin width-wrapper {
+  max-width: $large-container-width;
+  margin: auto;
+}
+
 @mixin light-box-shadow {
   box-shadow: $grid-xs $grid-1 $grid-1 $neutral-200;
 }

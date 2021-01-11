@@ -7,6 +7,7 @@
   list-style: none;
 
   li {
+    display: flex;
     position: relative;
 
     margin: $grid-2 0 $grid-2 $grid-2;
@@ -15,6 +16,10 @@
     @include light-box-shadow;
 
     background: $neutral-100;
+
+    span, i {
+      display: inline-block;
+    }
   }
 
   &__number {

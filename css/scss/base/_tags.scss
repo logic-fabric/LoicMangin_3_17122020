@@ -6,8 +6,6 @@ html {
   font-size: 1rem;
   font-weight: 300;
 
-  background: $neutral-700; // to-remove
-
   scroll-behavior: smooth;
 }
 
@@ -24,6 +22,10 @@ a {
 
 a:hover {
   color: $neutral-700;
+}
+
+article {
+  margin-bottom: $grid-3;
 }
 
 fieldset {
@@ -64,6 +66,10 @@ h5 {
 
 h6 {
   font-size: $h6-size;
+}
+
+main {
+  @include width-wrapper;
 }
 
 ul {
