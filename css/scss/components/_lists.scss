@@ -73,6 +73,7 @@
 .c-item-list {
   $checkbox-transition-duration: 350ms;
 
+
   label {
     display: flex;
 
@@ -148,6 +149,7 @@
     }
   }
 
+  input:checked + label,
   label:hover {
     .c-item-list__check {
       width: 6 * $grid-2;

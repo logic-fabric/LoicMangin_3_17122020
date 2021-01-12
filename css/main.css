@@ -2468,9 +2468,11 @@ label[for=dessert-4] {
   transform: rotate(-180deg);
   transition: transform 350ms;
 }
+.c-item-list input:checked + label .c-item-list__check,
 .c-item-list label:hover .c-item-list__check {
   width: 6rem;
 }
+.c-item-list input:checked + label .fa-check-circle,
 .c-item-list label:hover .fa-check-circle {
   transform: rotate(360deg);
 }
