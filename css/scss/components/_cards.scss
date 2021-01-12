@@ -54,6 +54,8 @@
 
   &__title {
     font-size: $h5-size;
+
+    transition: padding 150ms, border 30ms 120ms, color 50ms 150ms;
   }
 
   &__text {
@@ -67,4 +69,11 @@
   @include light-box-shadow-hover;
 
   transform: translateY(-$grid-sm);
+}
+
+.c-card a:focus .c-card__title {
+  padding-left: $grid-1;
+  border-left: $grid-sm solid $primary-500;
+
+  color: $primary-500;
 }
