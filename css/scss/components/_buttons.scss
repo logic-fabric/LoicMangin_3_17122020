@@ -18,8 +18,10 @@
     transition: box-shadow 300ms, opacity 300ms;
   }
 
+  &--cta:focus,
   &--cta:hover {
     @include btn-box-shadow-hover;
+    outline: none;
 
     color: white;
 

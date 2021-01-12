@@ -2250,8 +2250,9 @@ footer li .iconed-link {
   background: linear-gradient(-10deg, #9356dc, #ff79da);
   transition: box-shadow 300ms, opacity 300ms;
 }
-.c-btn--cta:hover {
+.c-btn--cta:focus, .c-btn--cta:hover {
   box-shadow: 0.25rem 0.5rem 1rem #878787;
+  outline: none;
   color: white;
   opacity: 0.87;
 }
