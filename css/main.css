@@ -2617,6 +2617,7 @@ label[for=dessert-4] {
   display: flex;
   justify-content: space-between;
   font-family: Shrikhand, cursive;
+  letter-spacing: 0.1rem;
 }
 .p-menu__content h1,
 .p-menu__content h2,
