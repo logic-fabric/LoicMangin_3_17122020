@@ -9,12 +9,7 @@ header {
     position: absolute;
     top: -$grid-xs;
 
-    &:focus {
-      outline: none;
-    }
-
-    &:focus i,
-    &:hover i {
+    i {
       position: relative;
       top: -$grid-1;
       left: -$grid-1;
@@ -22,10 +17,18 @@ header {
       padding: $grid-1;
       border-radius: 50%;
 
+      transition: color 300ms, background-color 300ms;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus i,
+    &:hover i {
       color: white;
 
       background: $neutral-500;
-
     }
   }
 }

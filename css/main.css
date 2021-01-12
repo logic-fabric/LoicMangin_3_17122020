@@ -2200,15 +2200,18 @@ header a {
   position: absolute;
   top: -0.125rem;
 }
-header a:focus {
-  outline: none;
-}
-header a:focus i, header a:hover i {
+header a i {
   position: relative;
   top: -0.5rem;
   left: -0.5rem;
   padding: 0.5rem;
   border-radius: 50%;
+  transition: color 300ms, background-color 300ms;
+}
+header a:focus {
+  outline: none;
+}
+header a:focus i, header a:hover i {
   color: white;
   background: #878787;
 }
