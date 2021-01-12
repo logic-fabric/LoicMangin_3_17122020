@@ -76,6 +76,8 @@
 
   label {
     display: flex;
+    position: relative;
+    top: 0;
 
     border-radius: $grid-1;
     @include light-box-shadow;
@@ -83,6 +85,8 @@
 
     background: white;
     opacity: 0;
+
+    transition : top 300ms;
   }
 
   &__description {
@@ -150,7 +154,10 @@
   }
 
   input:checked + label,
+  input:focus + label,
   label:hover {
+    transform: translateY(10px);
+
     .c-item-list__check {
       width: 6 * $grid-2;
     }
@@ -158,5 +165,12 @@
     .fa-check-circle {
       transform: rotate(360deg);
     }
+  }
+
+  input:focus + label {
+    position: relative;
+    top: -$grid-xs;
+
+    @include light-box-shadow-hover;
   }
 }

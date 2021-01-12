@@ -2418,11 +2418,14 @@ label[for=dessert-4] {
 }
 .c-item-list label {
   display: flex;
+  position: relative;
+  top: 0;
   border-radius: 0.5rem;
   box-shadow: 0.125rem 0.5rem 0.5rem #eaeaea;
   overflow: hidden;
   background: white;
   opacity: 0;
+  transition: top 300ms;
 }
 .c-item-list__description {
   display: block;
@@ -2468,13 +2471,25 @@ label[for=dessert-4] {
   transform: rotate(-180deg);
   transition: transform 350ms;
 }
+.c-item-list input:checked + label,
+.c-item-list input:focus + label,
+.c-item-list label:hover {
+  transform: translateY(10px);
+}
 .c-item-list input:checked + label .c-item-list__check,
+.c-item-list input:focus + label .c-item-list__check,
 .c-item-list label:hover .c-item-list__check {
   width: 6rem;
 }
 .c-item-list input:checked + label .fa-check-circle,
+.c-item-list input:focus + label .fa-check-circle,
 .c-item-list label:hover .fa-check-circle {
   transform: rotate(360deg);
+}
+.c-item-list input:focus + label {
+  position: relative;
+  top: -0.125rem;
+  box-shadow: 0.25rem 0.5rem 1rem #b9b9b9;
 }
 
 @keyframes spinning-circle {
