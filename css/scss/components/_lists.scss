@@ -103,7 +103,7 @@
   }
 
   &__title {
-    padding: $grid-2 $grid-sm $grid-sm $grid-sm;
+    padding: $grid-1 $grid-sm $grid-sm $grid-sm;
 
     font-size: $h6-size;
     font-weight: 500;
@@ -116,7 +116,7 @@
   &__price {
     display: block;
 
-    padding-top: 2.75 * $grid-2;
+    padding-top: 2.25 * $grid-2;
     margin: 0 $grid-2;
 
     color: $neutral-700;
@@ -135,7 +135,7 @@
     transition: width $checkbox-transition-duration;
 
     .fa-check-circle {
-      margin: $grid-3 $grid-2;
+      margin: $grid-2;
       border-radius: 50%;
 
       color: white;

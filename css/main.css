@@ -2437,7 +2437,7 @@ label[for=dessert-4] {
   white-space: nowrap;
 }
 .c-item-list__title {
-  padding: 1rem 0.25rem 0.25rem 0.25rem;
+  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -2446,7 +2446,7 @@ label[for=dessert-4] {
 }
 .c-item-list__price {
   display: block;
-  padding-top: 2.75rem;
+  padding-top: 2.25rem;
   margin: 0 1rem;
   color: #555555;
   font-weight: 700;
@@ -2460,7 +2460,7 @@ label[for=dessert-4] {
   transition: width 350ms;
 }
 .c-item-list__check .fa-check-circle {
-  margin: 1.5rem 1rem;
+  margin: 1rem;
   border-radius: 50%;
   color: white;
   font-size: 1.771561rem;
