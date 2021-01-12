@@ -8,5 +8,24 @@ header {
   a {
     position: absolute;
     top: -$grid-xs;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus i,
+    &:hover i {
+      position: relative;
+      top: -$grid-1;
+      left: -$grid-1;
+
+      padding: $grid-1;
+      border-radius: 50%;
+
+      color: white;
+
+      background: $neutral-500;
+
+    }
   }
 }
