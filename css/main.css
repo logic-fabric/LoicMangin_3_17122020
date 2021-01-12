@@ -382,7 +382,7 @@ a {
 }
 
 a:hover {
-  color: #555555;
+  color: #878787;
 }
 
 article {
@@ -2222,7 +2222,7 @@ footer li a {
   font-weight: 400;
 }
 footer li a:hover {
-  color: #eaeaea;
+  color: #b9b9b9;
 }
 footer li .iconed-link {
   position: absolute;
