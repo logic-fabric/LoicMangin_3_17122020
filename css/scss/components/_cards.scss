@@ -55,7 +55,7 @@
   &__title {
     font-size: $h5-size;
 
-    transition: padding 150ms, border 30ms 120ms, color 50ms 150ms;
+    @include border-left-transition;
   }
 
   &__text {

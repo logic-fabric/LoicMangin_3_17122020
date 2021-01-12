@@ -17,18 +17,31 @@ footer {
   li {
     position: relative;
 
+    .iconed-link__text {
+      position: absolute;
+      left: $grid-4;
+
+      transition: left 150ms;
+    }
+
     a {
       color: white;
       font-weight: 400;
-    }
 
-    a:hover {
-      color: $neutral-300;
-    }
+      @include border-left-transition;
 
-    .iconed-link {
-      position: absolute;
-      left: $grid-4;
+      &:focus,
+      &:hover {
+        padding-left: $grid-1;
+        border-left: $grid-sm solid $neutral-300;
+        outline: none;
+
+        color: $neutral-300;
+
+        .iconed-link__text {
+          left: $grid-5;
+        }
+      }
     }
   }
 }

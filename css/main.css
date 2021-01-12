@@ -2229,16 +2229,24 @@ footer .c-logo__img {
 footer li {
   position: relative;
 }
+footer li .iconed-link__text {
+  position: absolute;
+  left: 2rem;
+  transition: left 150ms;
+}
 footer li a {
   color: white;
   font-weight: 400;
+  transition: padding 150ms, border 30ms 120ms, color 50ms 150ms;
 }
-footer li a:hover {
+footer li a:focus, footer li a:hover {
+  padding-left: 0.5rem;
+  border-left: 0.25rem solid #b9b9b9;
+  outline: none;
   color: #b9b9b9;
 }
-footer li .iconed-link {
-  position: absolute;
-  left: 2rem;
+footer li a:focus .iconed-link__text, footer li a:hover .iconed-link__text {
+  left: 2.5rem;
 }
 
 @media (max-width: 839px) {

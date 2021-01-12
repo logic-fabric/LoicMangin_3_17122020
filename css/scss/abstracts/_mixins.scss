@@ -23,3 +23,7 @@
 @mixin btn-box-shadow-hover {
   box-shadow: $grid-sm $grid-1 $grid-2 $neutral-500;
 }
+
+@mixin border-left-transition {
+  transition: padding 150ms, border 30ms 120ms, color 50ms 150ms;
+}
