@@ -2555,12 +2555,12 @@ label[for=dessert-4] {
   z-index: 8000;
   margin: auto;
   overflow: hidden;
-  animation: height-shrinking 0ms linear forwards;
+  animation: height-shrinking 2000ms linear forwards;
 }
 
 .p-home__content-wrapper {
   overflow: hidden;
-  animation: height-expanding 0ms linear forwards;
+  animation: height-expanding 2000ms linear forwards;
 }
 
 @media (min-width: 840px) {
