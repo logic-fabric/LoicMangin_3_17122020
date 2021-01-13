@@ -39,7 +39,7 @@ footer {
         color: $neutral-300;
 
         .iconed-link__text {
-          left: $grid-5;
+          left: $grid-5 + $grid-sm;
         }
       }
     }

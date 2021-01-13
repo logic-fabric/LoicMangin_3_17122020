@@ -2249,7 +2249,7 @@ footer li a:focus, footer li a:hover {
   color: #b9b9b9;
 }
 footer li a:focus .iconed-link__text, footer li a:hover .iconed-link__text {
-  left: 2.5rem;
+  left: 2.75rem;
 }
 
 @media (max-width: 839px) {
