@@ -2576,6 +2576,60 @@ label[for=dessert-4] {
   height: 2.3030293rem;
 }
 
+.p-main-404 {
+  border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.p-http-code {
+  width: max-content;
+  margin: 0 auto;
+  padding: 30vh 4rem 35vh 4rem;
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(-10deg, #9356dc 0%, #9356dc 40%, #ff79da 60%, #ff79da 100%);
+  -webkit-background-clip: text;
+}
+
+.p-http-text {
+  padding: 0 1rem;
+}
+.p-http-text h1,
+.p-http-text p {
+  padding: 1rem 2rem 1rem 2rem;
+}
+.p-http-text h1 {
+  margin: 32vh auto 0 auto;
+}
+.p-http-text p {
+  margin: 0 auto 3vh auto;
+  font-size: 1.21rem;
+}
+.p-http-text .c-btn--cta {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1063px) {
+  .p-main-404 {
+    border-radius: 0;
+  }
+}
+@media (max-width: 839px) {
+  .p-http-code {
+    padding: 5vh 4rem;
+    font-size: 6rem;
+  }
+
+  .p-http-text {
+    background: white;
+  }
+  .p-http-text h1 {
+    margin: 0 auto;
+  }
+}
 @keyframes height-shrinking {
   99% {
     height: 100vh;

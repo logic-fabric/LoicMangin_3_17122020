@@ -1,0 +1,71 @@
+.p-main-404 {
+  border-radius: $grid-6 $grid-6 0 0;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.p-http-code {
+  width: max-content;
+  margin: 0 auto;
+  padding: 30vh $grid-8 35vh $grid-8;
+
+  color: white;
+  font-size: 8rem;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+
+  background: linear-gradient(
+    -10deg,
+    $primary-500 0%,
+    $primary-500 40%,
+    $secondary-500 60%,
+    $secondary-500 100%
+  );
+  -webkit-background-clip: text;
+}
+
+.p-http-text {
+  padding: 0 $grid-2;
+
+  h1,
+  p {
+    padding: $grid-2 $grid-4 $grid-2 $grid-4;
+  }
+
+  h1 {
+    margin: 32vh auto 0 auto;
+  }
+
+  p {
+    margin: 0 auto 3vh auto;
+
+    font-size: $h5-size;
+  }
+
+  .c-btn--cta {
+    margin-bottom: $grid-6;
+  }
+}
+
+@media (max-width: $medium-breakpoint - 1) {
+  .p-main-404 {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: $small-breakpoint - 1) {
+  .p-http-code {
+    padding: 5vh $grid-8;
+
+    font-size: 6rem;
+  }
+
+  .p-http-text {
+    background: white;
+
+    h1 {
+      margin: 0 auto;
+    }
+  }
+}

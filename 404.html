@@ -1,62 +1,109 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html class="no-js" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ohmyfood | Page non trouvée</title>
+    <meta name="description" content="Erreur HTTP 404 - Page non trouvée." />
+    <meta name="author" content="Lowic Mangin" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="nofollow" />
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
+    <meta property="og:title" content="ohmyfood" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ohmmyfood.fake" />
+    <meta property="og:image" content="img/logo-ohmyfood.png" />
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
+    <!-- Place favicon.ico in the root directory: -->
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
+    <!-- Fonts and icons: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bb16c2ef8.js"
+      crossorigin="anonymous"
+    ></script>
 
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
+    <!-- Custom CSS, containing normalize.css: -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-    @media only screen and (max-width: 280px) {
-      body,
-      p {
-        width: 95%;
-      }
+  <body>
+    <header class="flex p-menu__header">
+      <a class="p-3" href="index.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
 
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-    }
-  </style>
-</head>
+      <div class="c-logo ph-2">
+        <img
+          class="c-logo__img block m-auto"
+          src="img/logo-ohmyfood.png"
+          alt="Logo d'ohmyfood"
+        />
+      </div>
+    </header>
 
-<body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
+    <main class="row-12 p-main-404 bg-neutral-100">
+      <p class="lg6 md6 sm12 p-http-code pw-8">404</p>
 
+      <section class="lg6 md6 sm12 p-http-text">
+        <h1>Oups, page introuvable&nbsp;!</h1>
+
+        <p>
+          Désolé, nous n'avons trouvé aucune page web à cette
+          adresse.
+        </p>
+        <a
+          class="c-btn c-btn--cta block w-max-content m-auto mt-3"
+          href="index.html"
+        >
+          Revenir à la page d'accueil
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="l-footer__content">
+        <div class="c-logo__box">
+          <img
+            class="c-logo__img block"
+            src="img/logo-ohmyfood-white.png"
+            alt="Logo d'ohmyfood"
+          />
+        </div>
+
+        <div class="row-12">
+          <ul class="lg6 md6 sm12">
+            <li>
+              <a href="#">
+                <i class="fas fa-utensils"></i>
+                <span class="iconed-link__text">Proposer un restaurant</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-hands-helping"></i>
+                <span class="iconed-link__text">Devenir partenaire</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="lg6 md6 sm12">
+            <li>
+              <a href="#">Mentions légales</a>
+            </li>
+            <li>
+              <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
