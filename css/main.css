@@ -2591,6 +2591,7 @@ label[for=dessert-4] {
   font-weight: 700;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(-10deg, #9356dc 0%, #9356dc 40%, #ff79da 60%, #ff79da 100%);
+  background-clip: text;
   -webkit-background-clip: text;
 }
 
@@ -2704,8 +2705,12 @@ label[for=dessert-4] {
   margin: auto;
 }
 
+.p-menu__img {
+  background: white;
+}
 .p-menu__img img {
   width: 100%;
+  min-height: 6rem;
   object-fit: cover;
 }
 

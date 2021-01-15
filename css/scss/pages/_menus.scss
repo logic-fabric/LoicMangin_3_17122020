@@ -2,10 +2,15 @@
   @include large-wrapper;
 }
 
-.p-menu__img img {
-  width: 100%;
+.p-menu__img {
+  background: white;
 
-  object-fit: cover;
+  img {
+    width: 100%;
+    min-height: 6rem;
+
+    object-fit: cover;
+  }
 }
 
 .p-menu__content {
