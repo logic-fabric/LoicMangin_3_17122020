@@ -59,9 +59,9 @@ $iefix: 0.01px;
           width: calc((100% / #{$nb-cols}) * #{$i} - #{$size} - #{$iefix});
         }
 
-        &.has-gutter#{$suffix} > .offset-lg#{i} {
+        &.has-gutter#{$suffix} > .offset-lg#{$i} {
           margin-left: calc(
-            (100% / #{$nb-cols}) * #{$i}- #{$size} / 2 - #{$iefix}
+            (100% / #{$nb-cols}) * #{$i} - #{$size} / 2 - #{$iefix}
           );
         }
       }
@@ -84,9 +84,9 @@ $iefix: 0.01px;
           width: calc((100% / #{$nb-cols}) * #{$i} - #{$size} - #{$iefix});
         }
 
-        &.has-gutter#{$suffix} > .offset-md#{i} {
+        &.has-gutter#{$suffix} > .offset-md#{$i} {
           margin-left: calc(
-            (100% / #{$nb-cols}) * #{$i}- #{$size} / 2 - #{$iefix}
+            (100% / #{$nb-cols}) * #{$i} - #{$size} / 2 - #{$iefix}
           );
         }
       }
@@ -109,9 +109,9 @@ $iefix: 0.01px;
           width: calc((100% / #{$nb-cols}) * #{$i} - #{$size} - #{$iefix});
         }
 
-        &.has-gutter#{$suffix} > .offset-sm#{i} {
+        &.has-gutter#{$suffix} > .offset-sm#{$i} {
           margin-left: calc(
-            (100% / #{$nb-cols}) * #{$i}- #{$size} / 2 - #{$iefix}
+            (100% / #{$nb-cols}) * #{$i} - #{$size} / 2 - #{$iefix}
           );
         }
       }
