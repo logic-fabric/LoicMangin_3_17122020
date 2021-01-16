@@ -1,4 +1,9 @@
+/* ==========
+   MENU PAGES
+   ========== */
+
 .p-menu__header {
+  display: flex;
   @include large-wrapper;
 }
 

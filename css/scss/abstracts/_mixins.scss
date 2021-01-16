@@ -1,3 +1,8 @@
+// =====================================
+// WRAPPER MIXINS
+// to contain contents on larger screens
+// =====================================
+
 @mixin large-wrapper {
   max-width: $large-container-width;
   margin: auto;
@@ -8,6 +13,9 @@
   margin: auto;
 }
 
+// =================
+// BOX-SHADOW MIXINS
+// =================
 @mixin light-box-shadow {
   box-shadow: $grid-xs $grid-1 $grid-1 $neutral-200;
 }
@@ -24,6 +32,9 @@
   box-shadow: $grid-sm $grid-1 $grid-2 $neutral-500;
 }
 
+// ================
+// TRANSITION MIXIN
+// ================
 @mixin border-left-transition {
   transition: padding 150ms, border 30ms 120ms, color 50ms 150ms;
 }

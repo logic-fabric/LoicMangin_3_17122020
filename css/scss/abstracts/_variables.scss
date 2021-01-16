@@ -1,6 +1,6 @@
-/* ========
-   SPACINGS
-   ======== */
+// ========
+// SPACINGS
+// ========
 
 $grid-1: 0.5rem; // for a grid based on a 8px unit if 1rem stays to 16px
 
@@ -15,9 +15,9 @@ $grid-6: $grid-1 * 6;
 $grid-7: $grid-1 * 7;
 $grid-8: $grid-1 * 8;
 
-/* ======
-   COLORS
-   ====== */
+// ======
+// COLORS
+// ======
 
 $primary-500: #9356dc; // briefing color
 
@@ -36,17 +36,17 @@ $neutral-700: #555555;
 $neutral-800: #444;
 $neutral-900: #353535;
 
-/* =====
-   FONTS
-   ===== */
+// =====
+// FONTS
+// =====
 
 $logo-font: Shrikhand, cursive;
 $txt-font: Roboto, "Helvetica Neue Light", "Helvetica Neue", "Helvetica",
   "Arial", sans-serif;
 
-/* =======================
-   TEXT AND HEADINGS SIZES
-   ======================= */
+// =======================
+// TEXT AND HEADINGS SIZES
+// =======================
 
 $txt-size: 1rem;
 $sm-size: 0.9 * $txt-size;
@@ -57,9 +57,9 @@ $h3-size: 1.1 * $h4-size;
 $h2-size: 1.1 * $h3-size;
 $h1-size: 1.1 * $h2-size;
 
-/* ====================================
-   BREAKPOINTS AND CONTAINERS MAX-WIDTH
-   ==================================== */
+// ====================================
+// BREAKPOINTS AND CONTAINERS MAX-WIDTH
+// ====================================
 
 $small-breakpoint: 840px;
 $medium-breakpoint: 1064px;

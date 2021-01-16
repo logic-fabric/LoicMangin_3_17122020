@@ -9,9 +9,9 @@ $colors: (
   "neutral-900": $neutral-900,
 );
 
-/* ==========
-   BACKGROUND
-   ========== */
+/* =================
+   BACKGROUND COLORS
+   ================= */
 
 @each $color, $hex in $colors {
   .bg-#{$color} {
@@ -19,9 +19,9 @@ $colors: (
   }
 }
 
-/* ====
-   TEXT
-   ==== */
+/* ===========
+   TEXT COLORS
+   =========== */
 
 @each $color, $hex in $colors {
   .txt-#{$color} {
