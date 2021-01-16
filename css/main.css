@@ -440,7 +440,7 @@ ul {
   list-style-type: none;
 }
 ul li {
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 /* ==========
@@ -2346,6 +2346,7 @@ footer li a:focus .iconed-link__text, footer li a:hover .iconed-link__text {
 .c-heart-icon-box {
   display: inline-block;
   position: relative;
+  margin-left: 1rem;
   color: #878787;
 }
 .c-heart-icon-box .fas {
@@ -2544,7 +2545,7 @@ label[for=dessert-4] {
   position: absolute;
   border: 0.5rem solid white;
   border-radius: 50%;
-  animation: spinning-circle 900ms linear infinite;
+  animation: spinning-circle 800ms linear infinite;
 }
 .c-spinner__outer-circle {
   top: 0.5rem;
@@ -2561,7 +2562,7 @@ label[for=dessert-4] {
   height: 6rem;
   border-color: transparent #99e2d0 #ff79da #9356dc;
   border-right-width: 0.25rem;
-  animation-duration: 700ms;
+  animation-duration: 600ms;
   animation-delay: 50ms;
 }
 
@@ -2584,7 +2585,6 @@ label[for=dessert-4] {
 
 .p-http-code {
   width: max-content;
-  margin: 0 auto;
   padding: 30vh 4rem 35vh 4rem;
   color: white;
   font-size: 8rem;
@@ -2595,22 +2595,17 @@ label[for=dessert-4] {
   -webkit-background-clip: text;
 }
 
-.p-http-text {
-  padding: 0 1rem;
-}
 .p-http-text h1,
 .p-http-text p {
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 0;
 }
 .p-http-text h1 {
-  margin: 32vh auto 0 auto;
+  margin: 30vh auto 0 auto;
+  padding-top: 2rem;
 }
 .p-http-text p {
   margin: 0 auto 3vh auto;
   font-size: 1.21rem;
-}
-.p-http-text .c-btn--cta {
-  margin-bottom: 3rem;
 }
 
 @media (max-width: 1063px) {
@@ -2656,7 +2651,6 @@ label[for=dessert-4] {
   height: 100vh;
   padding: 20vh 0;
   z-index: 8000;
-  margin: auto;
   overflow: hidden;
   animation: height-shrinking 2000ms linear forwards;
 }
@@ -2711,6 +2705,7 @@ label[for=dessert-4] {
 .p-menu__img img {
   width: 100%;
   min-height: 6rem;
+  max-height: 16rem;
   object-fit: cover;
 }
 

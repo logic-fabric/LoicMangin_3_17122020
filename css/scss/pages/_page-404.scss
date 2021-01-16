@@ -7,7 +7,6 @@
 
 .p-http-code {
   width: max-content;
-  margin: 0 auto;
   padding: 30vh $grid-8 35vh $grid-8;
 
   color: white;
@@ -27,25 +26,21 @@
 }
 
 .p-http-text {
-  padding: 0 $grid-2;
 
   h1,
   p {
-    padding: $grid-2 $grid-4 $grid-2 $grid-4;
+    padding: $grid-2 0;
   }
 
   h1 {
-    margin: 32vh auto 0 auto;
+    margin: 30vh auto 0 auto;
+    padding-top: $grid-4;
   }
 
   p {
     margin: 0 auto 3vh auto;
 
     font-size: $h5-size;
-  }
-
-  .c-btn--cta {
-    margin-bottom: $grid-6;
   }
 }
 
