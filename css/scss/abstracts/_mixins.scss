@@ -17,18 +17,22 @@
 // BOX-SHADOW MIXINS
 // =================
 @mixin light-box-shadow {
+  -webkit-box-shadow: $grid-xs $grid-1 $grid-1 $neutral-200;
   box-shadow: $grid-xs $grid-1 $grid-1 $neutral-200;
 }
 
 @mixin light-box-shadow-hover {
+  -webkit-box-shadow: $grid-sm $grid-1 $grid-2 $neutral-300;
   box-shadow: $grid-sm $grid-1 $grid-2 $neutral-300;
 }
 
 @mixin btn-box-shadow {
+  -webkit-box-shadow: $grid-xs $grid-sm $grid-1 $neutral-300;
   box-shadow: $grid-xs $grid-sm $grid-1 $neutral-300;
 }
 
 @mixin btn-box-shadow-hover {
+  -webkit-box-shadow: $grid-sm $grid-1 $grid-2 $neutral-500;
   box-shadow: $grid-sm $grid-1 $grid-2 $neutral-500;
 }
 

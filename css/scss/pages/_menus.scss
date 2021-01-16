@@ -15,6 +15,7 @@
     min-height: 6rem;
     max-height: 16rem;
 
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -69,6 +70,8 @@
   }
 
   .c-btn--cta {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     margin: $grid-4 auto 0 auto;
   }

@@ -6,6 +6,7 @@ header {
   position: relative;
 
   .l-box-location {
+    -webkit-box-shadow: inset 0 $grid-xs $grid-xs $neutral-300;
     box-shadow: inset 0 $grid-xs $grid-xs $neutral-300;
   }
 
