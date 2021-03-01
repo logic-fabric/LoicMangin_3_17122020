@@ -4,7 +4,7 @@ Code source du **Projet 3** - **_Dynamisez une page web avec des animations CSS_
 
 ## Page de démonstration
 
-Le rendu de ce code en est accessible sur cette [GitHub Page dédiée](https://logic-fabric.github.io/LoicMangin_3_17122020/).
+Le rendu de ce code est accessible sur cette [GitHub Page dédiée](https://logic-fabric.github.io/LoicMangin_3_17122020/).
 
 ## Sass
 
