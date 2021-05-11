@@ -6,6 +6,10 @@ Code source du **Projet 3** - **_Dynamisez une page web avec des animations CSS_
 
 Le rendu de ce code est accessible sur cette [GitHub Page dédiée](https://logic-fabric.github.io/LoicMangin_3_17122020/).
 
+## Maquette de l'UI
+
+L'UI de ce projet a été réalisée à partir de maquettes (format _smartphone_) placées dans le dossier `/doc`.
+
 ## Sass
 
 - [Installer Sass](https://sass-lang.com/install) sur votre machine.
